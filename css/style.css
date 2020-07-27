@@ -1,0 +1,88 @@
+:root{
+    --color-1: #5f6366;
+    --color-2: #4d6d9a;
+    --color-3: #86b3d1;
+    --color-4: #99ced3;
+    --color-5: #edb5bf;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    font-family: "EB-grarmond", Georgia, 'Times New Roman', Times, serif;
+}
+.login-container {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../img/login.jpg") no-repeat center center/cover;
+    height: 100vh;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-wrapper{
+    color: #fff;
+    width: 40%;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+.heading{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.error{
+    text-align: center;
+    color: red;
+}
+h2{
+    color: rgb(9, 248, 9);
+    font-size: 2rem;
+}
+.form-group{
+    text-align: center;
+}
+
+input[type="text"]{
+    width:50%;
+    /* text-align: center; */
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 1rem;
+    margin-left: 0.8rem;
+}
+input[type="submit"]{
+    background:#4caf50;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+    padding:0.3rem 0.8rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+
+}
+/* input:focus{
+    outline: none;
+} */
+
+/* Media query */
+@media screen and (max-width: 768px){
+    .container{
+        width: 95%;
+    }
+    .form-wrapper{
+        width: 100%;
+    }
+}
+
